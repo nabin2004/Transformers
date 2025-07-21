@@ -9,9 +9,9 @@ def scaled_dot_product_attention(queries, keys, values):
     return output, attention_weights
 
 
-queries = torch.tensor([[[1.0, 0.0]]])  # shape (1, 1, 2)
-keys = torch.tensor([[[1.0, 0.0], [0.0, 1.0]]])  # shape (1, 2, 2)
-values = torch.tensor([[[1.0, 2.0], [3.0, 4.0]]])  # shape (1, 2, 2)
+queries = torch.tensor([[[1.0, 0.0]]])  
+keys = torch.tensor([[[1.0, 0.0], [0.0, 1.0]]]) 
+values = torch.tensor([[[1.0, 2.0], [3.0, 4.0]]])  
 
 output, attn = scaled_dot_product_attention(queries, keys, values)
 
